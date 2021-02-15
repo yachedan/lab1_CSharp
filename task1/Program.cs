@@ -32,11 +32,11 @@ namespace lab1
             }
             if(x<0)                                   //Ліва частина графіку
             {
-                if(Math.Abs(y)<R && Math.Abs(x)<R*Math.Sqrt(2))
+                if(y<x || -y<x && Math.Abs(y)<R && x>-5)
                     Console.WriteLine("Так");
                 else
                 {
-                    if(Math.Abs(y)<=R && Math.Abs(x)<=R*Math.Sqrt(2))
+                    if(y<x || -y<x && Math.Abs(y)<=R && x>=-5)
                         Console.WriteLine("На межі");
                     else
                         Console.WriteLine("Ні");

@@ -10,6 +10,8 @@ namespace task4
             byte[] whiteHorse = new byte[2] {0, 0};
             byte[] blackKing = new byte[2] {0, 0};
             bool flag = false;
+
+
             Console.WriteLine("Input coordinates(x,y): ");
             Console.Write("White King: ");
             string input = Console.ReadLine();
@@ -27,6 +29,8 @@ namespace task4
             input = Console.ReadLine();
             blackKing[0] = (byte)Char.GetNumericValue(input[0]);
             blackKing[1] = (byte)Char.GetNumericValue(input[2]);
+
+            
             if(blackKing[0]<1 || blackKing[0]>8 || blackKing[1]<1 || blackKing[1]>8)
                 flag = true;
             if (whiteHorse.SequenceEqual(whiteKing) || whiteKing.SequenceEqual(blackKing)
