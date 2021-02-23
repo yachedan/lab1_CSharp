@@ -36,7 +36,7 @@ namespace lab1
                     Console.WriteLine("Так");
                 else
                 {
-                    if(y<x || -y<x && Math.Abs(y)<=R && x>=-5)
+                    if(y<=x || -y<=x && Math.Abs(y)<=R && x>=-5)
                         Console.WriteLine("На межі");
                     else
                         Console.WriteLine("Ні");
